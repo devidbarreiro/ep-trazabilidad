@@ -1,0 +1,19 @@
+matching:
+  umbral_titular: 80
+  umbral_cuerpo: 70
+  ventana_horas: 48
+
+ingesta:
+  intervalo_minutos: 30
+  user_agent: "EPTrazabilidad/0.1 (feed reader)"
+
+scraping:
+  agencia: "europa press"
+  agencia_keywords:
+    - "europa press"
+    - "europapress"
+    - "ep/"
+  delay: 1.0
+
+db:
+  path: "data/trazabilidad.db"

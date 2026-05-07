@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+dist/
+build/
+
+# Data
+*.db
+data/*.db
+
+# OS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Web (handled by web/.gitignore too)
+web/node_modules/
+web/.next/
+web/.vercel/

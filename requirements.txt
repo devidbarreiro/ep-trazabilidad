@@ -1,0 +1,10 @@
+feedparser>=6.0
+rapidfuzz>=3.0
+rich>=13.0
+pyyaml>=6.0
+scrapling
+curl_cffi
+playwright
+fastapi>=0.115
+uvicorn>=0.34
+python-multipart>=0.0.9
