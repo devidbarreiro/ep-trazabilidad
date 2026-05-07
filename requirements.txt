@@ -2,6 +2,8 @@ feedparser>=6.0
 rapidfuzz>=3.0
 rich>=13.0
 pyyaml>=6.0
+requests>=2.31
+beautifulsoup4>=4.12
 scrapling
 curl_cffi
 playwright

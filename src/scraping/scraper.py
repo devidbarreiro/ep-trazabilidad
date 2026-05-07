@@ -1,6 +1,6 @@
 import re
 import time
-from scrapling.fetchers import Fetcher
+from .fetch import fetch_page
 from ..db import Database
 
 
@@ -42,7 +42,7 @@ class ArticleScraper:
 
     def scrape_articulo(self, url: str) -> dict | None:
         try:
-            page = Fetcher.get(url)
+            page = fetch_page(url)
         except Exception:
             return None
 

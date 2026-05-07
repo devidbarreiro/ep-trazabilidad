@@ -165,10 +165,10 @@ class ScrapeURL(BaseModel):
 
 @app.post("/api/teletipos/from-url")
 def teletipo_from_url(body: ScrapeURL):
-    from scrapling.fetchers import Fetcher
+    from .scraping.fetch import fetch_page
     import hashlib
 
-    page = Fetcher.get(body.url)
+    page = fetch_page(body.url)
 
     titular = (page.css("h1::text").get() or "").strip()
     if not titular:
